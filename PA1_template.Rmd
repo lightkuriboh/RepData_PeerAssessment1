@@ -147,4 +147,10 @@ my_plot_weekday_activity_pattern <- daily_activity_pattern(
     'Weekday days'
 )
 grid.arrange(my_plot_weekday_activity_pattern, my_plot_weekend_activity_pattern, ncol = 1, nrow = 2)
+# x <- aggregate(steps~interval + week, data1, mean, na.rm = TRUE)
+# ggplot2::ggplot(x, aes(x=interval, y=steps, color= week))+
+#         geom_line(size= 1)+
+#         theme_bw()+
+#         labs(x="Steps", y="Average number of steps", title= "Average daily steps by type of day", color= "Type of day") +
+#         facet_grid(week~.)
 ```  
